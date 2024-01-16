@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6739c6477b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/R logo.png" alt="Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Chaitanya</span><br>Gujar From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/chaitu real.png" alt="About Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Chaitanya Gujar from Satara. I recently graduated from T.C. College, Baramati. Currently, I'm
+                        immersed in a UI-UX course in Pune. I belong to a close-knit nuclear family. One of my core
+                        strengths is self-motivation; I strive for continuous self-improvement. However, I'm working on
+                        being less sensitive to feedback and expectations from others. I tend to be talkative, but I
+                        embrace it as it helps me connect with people.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designer web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023</span><br>UI/UX Designer Training at Techrel Institute</li>
+                            <li><span>2023 - 2024</span><br>Graphic Designer at Techrel</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>UI/UX Designer Training at Techrel Institute</li>
+                            <li><span>2023</span><br>BCS From T. C College Baramati</li>
+                            <li><span>2020</span><br>Higher Secondary From R.B.J.C College Aundh</li>
+                            <li><span>2018</span><br>Senior Secondary Education From S.S High School Aundh</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="Services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dicta eveniet! Consequuntur beatae
+                        minima repudiandae sequi eius sint quo dolor</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dicta eveniet! Consequuntur beatae
+                        minima repudiandae sequi eius sint quo dolor</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dicta eveniet! Consequuntur beatae
+                        minima repudiandae sequi eius sint quo dolor</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/work-1.png" alt="Work 1">
+                    <div class="layer">
+                        <h3>Social media App</h3>
+                        <p>The App Connects you to the talented people around the world. Download it from the play store
+                        </p>
+                        <a href="#"><i class="fas fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-2.png" alt="Work 2">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The App Connects you to the talented people around the world. Download it from the play store
+                        </p>
+                        <a href="#"><i class="fas fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-3.png" alt="Work 3">
+                    <div class="layer">
+                        <h3>Online shopping app</h3>
+                        <p>The App Connects you to the talented people around the world. Download it from the play store
+                        </p>
+                        <a href="#"><i class="fas fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>chaitanya0123gujar@gmail.com</p>
+                    <p><i class="fas fa-square-phone"></i>+91 7249140857</p>
+
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/chaitanya.gujar.18/"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/chaitanya_gujar18/"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/chaitanya-gujar-666b142a7/"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/chai87959"><i
+                                class="fab fa-twitter-square"></i></a>
+                    </div>
+                    <a href="Images/Chaitanya gujar.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @ Chaitanya Made for <i class="fas fa-heart"></i> my Portfolio</p>
+
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.querySelectorAll(".tab-links");
+        var tabcontents = document.querySelectorAll(".tab-contents");
+
+        function opentab(tabname) {
+            tablinks.forEach(tablink => tablink.classList.remove("active-link"));
+            tabcontents.forEach(tabcontent => tabcontent.classList.remove("active-tab"));
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+        function submitForm() {
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxf54GoTThHvF7d9AdlkE1LOBji7fKNHJHIb3XUQDzb-pf7XT0lp4Y94o2Oh9-U2c89/exec'
+            const form = document.forms['submit-to-google-sheet']
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    console.log('Success!', response);
+                    // Handle success as needed (e.g., show a success message)
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    // Handle error as needed (e.g., show an error message)
+                });
+        }
+    </script>
+</body>
+
+</html>
